@@ -25,11 +25,16 @@ class WordScrambleEx1 {
     	for (int i = 0; i < ck.length; i++) {
     		ck[i] = str.charAt(i) ;
 		}
-    	for (int i = 0; i < ck.length-1; i++) {
-    		char tmp = ck[0] ;
-    		ck[0] = ck[i+1] ; 
-    		ck[i+1] = tmp ;
+
+    	int m = (int)(Math.random()*100)+1;
+    	for (int j = 0; j < m; j++) {
+    		for (int i = 0; i < ck.length-1; i++) {
+    			char tmp = ck[0] ;
+    			ck[0] = ck[i+1] ; 
+    			ck[i+1] = tmp ;
+    		}
 		}
+    	
     	for (int i = 0; i < ck.length; i++) {
 		 result += ck[i];	
 		}
