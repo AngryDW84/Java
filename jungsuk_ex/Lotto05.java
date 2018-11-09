@@ -8,14 +8,14 @@ public class Lotto05 {
 
 		//로또번호
 
-		int		cnt		=	0	;
-		int		count	=	7777;  // shuffle
-		int		iMax	=	45	;
-		int		tmp		= 	0   ;
-		int		game1	=	1_000_000;	// 시도
-		int		num		=	0	;
-		int		iN		=   0  	;
-		String 	result	=  "";
+		int	cnt	=	0	;
+		int	count	=	7777;  // shuffle
+		int	iMax	=	45	;
+		int	tmp	= 	0  	 ;
+		int	game1	=	1_000_000;	// 시도
+		int	num	=	0	;
+		int	iN	=  	0  	;
+		String 	result	=  	""	;
 
 		int[]	Lotto	=	new int[iMax] ;
 		ArrayList<String> arr = new ArrayList<String>() ;
@@ -271,11 +271,6 @@ public class Lotto05 {
 				continue ;
 			}
 
-
-
-
-
-
 			// char 로 변환
 			char[] Cb = {'a','a','a','a','a','a'} ; 
 			int[] Ib = { 0, 0, 0 ,0 ,0 ,0} ; 
@@ -293,38 +288,32 @@ public class Lotto05 {
 			arr.add(str) ; 
 		}
 
-//		System.out.println(arr.size());
-
 
 		for (int i = 0; i < arr.size(); i++) {
 			iN = 0 ;
 			for (int j = 0; j < arr.size(); j++) {
 				if (arr.get(i).equals(arr.get(j))) {
 					iN++ ; 
-					if (iN>2) {
+					if (iN>3) {
 						result = arr.get(i) ; 
-//						System.out.println(iN + " " + arr.get(i) + " : " + arr.get(j));	
+//						System.out.println(iN + " " + arr.get(i) + " : " + arr.get(j));
+						char[] Cb = {'a','a','a','a','a','a'} ; 
+						int[] Ib = { 0, 0, 0 ,0 ,0 ,0} ; 		
+						for (int i1 = 0; i1 < Cb.length; i1++) {
+							Cb[i1] = result.charAt(i1) ; 
+							Ib[i1] = (int) Cb[i1] - 64 ; 
+						}
+						result = "" ;
+						for (int i1 = 0; i1 < Ib.length; i1++) {
+							result = result + Ib[i1] + " :" ;
+						}
+						System.out.println(iN+":당첨번호는 ? " + result);
 					}
 				}
 			}
-
-		}
 		
-
-		// char -> 숫자 변환 
-//		1 LOS\eh : LOS\eh
-		
-		char[] Cb = {'a','a','a','a','a','a'} ; 
-		int[] Ib = { 0, 0, 0 ,0 ,0 ,0} ; 		
-		for (int i = 0; i < Cb.length; i++) {
-			Cb[i] = result.charAt(i) ; 
-			Ib[i] = (int) Cb[i] - 64 ; 
+			
 		}
-		result = "" ;
-		for (int i = 0; i < Ib.length; i++) {
-			result = result + Ib[i] + " :" ;
-		}
-		System.out.println("당첨번호는 ? " + result);
 		
 		
 	}  // end of main
