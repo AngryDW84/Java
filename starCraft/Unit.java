@@ -11,5 +11,10 @@ public abstract class Unit {
 	void move(int i) {
 		System.out.println(i +"만큼 이동합니다");
 	}
+
+	public int Marine(int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
