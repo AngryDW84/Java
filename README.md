@@ -1,12 +1,14 @@
 # Java
 ## Java + Quiz from "jungsuk of java"
 
-### Quiz 1 / 20181109
-WordScrambleEx1.java
+### Lotto 45
+Lotto05.java   20181110   13, 14, 19, 26, 40, 43  조건 Pass OK
+
+### Quiz 3 / 20181111
+WordScrambleEx3.java
 
 ### Quiz 2 / 20181110
 WordScrambleEx2.java
 
-### Lotto 45
-Lotto05.java
-
+### Quiz 1 / 20181109
+WordScrambleEx1.java
