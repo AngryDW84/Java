@@ -27,8 +27,9 @@ public class SimpleQuiz03 {
 			String answer = tmp[1]; 
 			String[] choices = tmp[2].split("`"); 
 
+			
 			answer = choices[Integer.parseInt(answer)-1]; 
-
+			
 			shuffle(choices); // 선택지를 섞는다.
 
 			System.out.println("["+(i+1)+"] "+question); 
@@ -37,13 +38,15 @@ public class SimpleQuiz03 {
 				
 				/* 코드를 완성하세요. */
 				System.out.printf("["+(x+1)+"]%s\t",choices[x]);
-
+				if (answer == choices[x]) {
+					answer = (x+1) +"" ;
+				}
 			} 
 
 			System.out.println(); 
 			System.out.print("[답]");
-			String input = s.nextLine(); 
-
+			String input = s.nextLine();
+			
 			if(input.equals(answer)) { 
 				score++; 
 			} 
