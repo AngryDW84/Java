@@ -4,6 +4,9 @@
 ### Lotto 45
 Lotto05.java   20181110   13, 14, 19, 26, 40, 43  조건 Pass OK
 
+### Quiz 8 / 20181116
+ConsoleEx03.java  / ConsoleEx04.java 
+
 ### Quiz 7 / 20181115
 ConsoleEx01.java / ConsoleEx02.java 
 
