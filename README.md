@@ -5,6 +5,12 @@
 Lotto05.java   20181110   13, 14, 19, 26, 40, 43  조건 Pass OK
 Lotto05.java   20181117   12, 18, 30, 39, 41, 42  조건 Pass OK
 
+### Quiz 11 / 20181122
+SungJukEx5.java  
+
+### Quiz 10 / 20181121
+SungJukEx4.java  
+
 ### Quiz 9 / 20181120
 SungJukEx1.java  / SungJukEx2.java  / SungJukEx3.java
 
