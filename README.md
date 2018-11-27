@@ -6,6 +6,9 @@ Lotto05.java   20181110   13, 14, 19, 26, 40, 43  조건 Pass OK
 Lotto05.java   20181117   12, 18, 30, 39, 41, 42  조건 Pass OK
 Lotto05.java   20181124   체크못함. 
 
+### Practice 02 / 20181126
+Exercise6_2, 6_4, 6_5, 6_6, 6_7.java
+
 ### Practice 01 / 20181124
 DBconnect.java
 
